@@ -69,8 +69,14 @@ def addTarget(dictionary, name, RA, Dec, Magnitude, SpectralType):
 	}
 
 def finddegree(dec):
-		deg = float(dec.replace("°", "").split("°")[0].replace("+", ""))
-		return deg
+    dec = dec.replace("°", "").replace("+", "").strip()
+    parts = dec.split()
+    if len(parts) == 3:
+        deg, mins, secs = map(float, parts)
+        return deg + mins/60 + secs/3600
+    else:
+        return float(parts[0])
+
 
 def brightesttwenty(dictionary):
 	closest_star = None

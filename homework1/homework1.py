@@ -299,7 +299,7 @@ head file_name
     shows first ten lines of it
 nano file_name
     text editor within the terminal
-    
+
 
 2. What is the difference between ls and ls -a? 
     ls -a shows the hidden files contrary to ls
@@ -312,5 +312,5 @@ nano file_name
     ls -h human readable numbers, shortens 1000 to 1k for example (gb, tb, etc.)
         ls -lh 
     rm -i adds safety confirmation after remove
-
+note: how is all 300 lines of code and terminal output supposed to go in a screenshot?
 """

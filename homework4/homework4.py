@@ -100,7 +100,7 @@ print(ages["Katie"])
 ages["Mariam"] = 100
 ages["Milana"] = 52
 ages.pop("Mariam")
-
+    
 for key in ages:
     print(key, ages[key])
 
